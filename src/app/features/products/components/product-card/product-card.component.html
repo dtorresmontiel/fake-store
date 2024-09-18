@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-content>
+    <a [routerLink]="['/products', product.id]" routerLinkActive="card-selected">
+      <div class="thumb" mat-card-image>
+        <img [ngSrc]="product.images[0]" (error)="setDefaultThumb()" width="200" height="200"
+          [priority]="isLCP ? true : null" />
+        <a [class]="{'favorite-icon': true, 'favorite-icon-selected': isFavorite}" mat-icon-button
+          (click)="toggleFavoriteProduct($event)"><mat-icon>favorite</mat-icon></a>
+        <div class="price"><span>{{ product.price }}€</span></div>
+      </div>
+    </a>
+    <mat-card-footer>
+      <a class="title" [routerLink]="['/products', product.id]" routerLinkActive="card-selected">
+        {{ product.title }}
+      </a>
+      <a mat-icon-button (click)="addProductToCart($event)"><mat-icon>shopping_cart</mat-icon></a>
+    </mat-card-footer>
+  </mat-card-content>
+</mat-card>

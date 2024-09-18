@@ -3,6 +3,28 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": [
+        "src/app/components/*"
+      ],
+      "@features/*": [
+        "src/app/features/*"
+      ],
+      "@models/*": [
+        "src/app/features/cart/models/*"
+      ],
+      "@services/*": [
+        "src/app/services/*"
+      ],
+      "@envs/*": [
+        "src/environments/*"
+      ],
+      "@data/*": [
+        "public/data/*"
+      ],
+    },
+    "resolveJsonModule": true,
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,

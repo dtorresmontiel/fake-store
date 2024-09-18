@@ -1,0 +1,13 @@
+<mat-card appearance="outlined">
+  <mat-card-header>Cart Details</mat-card-header>
+  <mat-card-content>
+    @for (cartProduct of cartService.products; track cartProduct.productId) {
+    <app-cart-product [cartProduct]="cartProduct" />
+    }
+  </mat-card-content>
+  <mat-card-footer>
+    <mat-card-actions align="end">
+      <button mat-flat-button>Proceed to checkout</button>
+    </mat-card-actions>
+  </mat-card-footer>
+</mat-card>

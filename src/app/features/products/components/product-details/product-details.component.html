@@ -1,0 +1,5 @@
+<h2>Producto: {{ product.title }}</h2>
+<p>Price: {{ product.price }}</p>
+@for (image of product.images; track $index) {
+<img [src]="image" width="100%" />
+}

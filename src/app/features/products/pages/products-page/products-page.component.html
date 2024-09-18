@@ -1,0 +1,14 @@
+@if (loading) {<app-spinner />}
+@if (products) {
+
+<mat-grid-list [cols]="gridColumns" gutterSize="10px" [rowHeight]="tileHeight">
+  @for (product of products.slice(0, 12); track $index) {
+  <mat-grid-tile>
+    <app-product-card [product]="product" [isFavorite]="favorites.includes(product.id)" [isLCP]="$index<10"
+      (onAddProductToCart)="addProductToCart($event)" (onAddFavoriteProduct)="addFavoriteProduct($event)"
+      (onRemoveFavoriteProduct)="removeFavoriteProduct($event)" />
+  </mat-grid-tile>
+  }
+</mat-grid-list>
+
+}

@@ -1,0 +1,17 @@
+<mat-toolbar role="heading" class="header-toolbar">
+  <a mat-icon-button (click)="onBurguerMenuClick.emit()"><mat-icon>menu</mat-icon></a>
+  <div class="app-info">
+    <a routerLink="/">
+      <img class="app-logo" ngSrc="assets/logo.svg" width="30" height="30" />
+      FakeStore
+    </a>
+  </div>
+  <nav class="navigation">
+    <a mat-button (click)="onNewProductClick.emit()"><mat-icon>add_box</mat-icon><span>New</span></a>
+  </nav>
+  <div class="tools-area">
+    <a mat-icon-button><mat-icon>person</mat-icon></a>
+    <a mat-icon-button (click)="toggleCartOpened($event)"><mat-icon [matBadge]="cartCount()"
+        [matBadgeHidden]="cartCount()==0" aria-hidden="false">shopping_cart</mat-icon></a>
+  </div>
+</mat-toolbar>

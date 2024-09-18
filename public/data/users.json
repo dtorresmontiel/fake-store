@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "User1",
+    "favoriteProducts": []
+  },
+  {
+    "id": 2,
+    "name": "User2",
+    "favoriteProducts": [
+      5,
+      9,
+      8
+    ]
+  }
+]

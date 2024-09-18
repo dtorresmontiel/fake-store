@@ -1,0 +1,22 @@
+:host {
+  display: block;
+  background: white;
+  padding: 15px;
+  max-width: 360px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+mat-card {
+  border: 0;
+}
+
+mat-card-header {
+  padding: 5px 10px;
+}
+
+mat-card-content {}
+
+mat-card-footer {
+  padding: 0 8px;
+}
