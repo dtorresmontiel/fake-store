@@ -1,4 +1,5 @@
-# FakeStore
+# FakeStore 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/___YOUR_PATH___)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
 
